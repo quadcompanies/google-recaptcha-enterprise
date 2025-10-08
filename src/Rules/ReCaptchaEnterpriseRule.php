@@ -78,7 +78,8 @@ class ReCaptchaEnterpriseRule implements Rule
             return false;
         }
 
-        $achievedScore = data_get($response->json(), 'riskAnalysis.score', 0);
+        //$achievedScore = data_get($response->json(), 'riskAnalysis.score', 0);
+        $achievedScore = $response->json()['riskAnalysis']['score'] ?? 0;
 
         return $achievedScore >= (float) $threshold;
     }
