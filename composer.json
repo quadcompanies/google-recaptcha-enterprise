@@ -21,7 +21,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Components\\\\GoogleReCaptchaEnterprise\\\\ReCaptchaEnterpriseServiceProvider"
+        "Components\\GoogleReCaptchaEnterprise\\ReCaptchaEnterpriseServiceProvider"
       ]
     }
   }
